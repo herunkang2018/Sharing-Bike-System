@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用共享单车</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .container-small{
+            max-width: 300px;
+        }
+        p{
+            background: green;
+        }
+
+        .red .bold{
+            color: green;
+            font-weight: 900;
+        }
+        span[title^="font"]{
+            border: 2px dashed pink;
+        }
+        .form-inline{
+            margin: 10px 0;
+        }
+        h1{
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+<p>power by Runking</p>
+<form action="register.php" method="post" class="container container-small">
+    <h1>欢迎注册</h1>
+    <div class="well">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">注册名</div>
+                <input type="text" name="username" class="form-control" placeholder="username">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">密码</div>
+                <input type="password" name="password" class="form-control" placeholder="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">确认</div>
+                <input type="password" name="confirm" class="form-control" placeholder="password">
+            </div>
+        </div>
+            <div class="form-group">
+                <select class="form-control" name="select">
+                    <option value="1">长安区</option>
+                    <option value="2">未央区</option>
+                    <option value="3">灞桥区</option>
+                    <option value="4">雁塔区</option>
+                </select>
+            </div>
+    </div>
+    <button id="btn" name="Submit" class="btn btn-primary btn-block" type="submit" value="注册">提交</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎使用共享单车</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        .container-small{
+            max-width: 300px;
+            margin-top: 30px;
+        }
+        #p1{
+            background: green;
+        }
+        #p2{
+            font-size: 23px;
+            position: absolute;
+            bottom: 10px;
+            left: 420px;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+<p id='p1'>power by Runking</p>
+<form class="container container-small" action="bill.php" method="POST">
+    <h1>使用支付宝充值</h1>
+    <div class="well">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon">充值金额</div>
+                <input type="text" name="money" class="form-control" placeholder="billing money">
+            </div>
+        </div>
+    </div>
+    <button id="btn" name="submit" class="btn btn-primary btn-block" type="submit" value="submit">充值</button>
+</form>
+<p class="text-warning" id='p2'>如遇支付问题，请及时拨打客服电话：029-88888888</p>
+</body>
+</html>
